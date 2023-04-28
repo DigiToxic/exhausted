@@ -28,7 +28,7 @@ const withTransition = <P,>(WrappedComponent: ComponentType<P>) => {
           setIsMounted(true);
         });
       };
-    }, []);
+    }, [router.events]);
 
     useEffect(() => {
       setIsMounted(true);
