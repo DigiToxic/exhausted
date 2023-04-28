@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import type { NextPage } from "next";
 import Link from "next/link";
 import Head1 from "./Triple Head/Header1";
-import { useTheme } from "./ThemeContext";
+import { useTheme } from "../../contexts/ThemeContext";
 
 const City: NextPage = () => {
   const [isBubbleVisible, setIsBubbleVisible] = useState(false);

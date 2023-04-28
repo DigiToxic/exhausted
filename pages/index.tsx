@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import type { NextPage } from "next";
 import Link from "next/link";
 import Head1 from "./components/Triple Head/Header1";
-import { useTheme } from './components/ThemeContext';
+import { useTheme } from '../contexts/ThemeContext';
 
 const Home: NextPage = () => {
   const { theme } = useTheme();

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { NextPage } from "next";
-import { useTheme } from "../ThemeContext";
+import { useTheme } from "../../../contexts/ThemeContext";
 
 const backdrop = {
   visible: { opacity: 1 },

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import type { NextPage } from "next";
 import Head1 from "./Triple Head/Header1";
-import { useTheme } from "./ThemeContext";
+import { useTheme } from "../../contexts/ThemeContext";
 import PopupScreen from "./PopupScreen";
 import PopupPaper from "./PopupPaper";
 import PopupMint from "./PopupMint";
