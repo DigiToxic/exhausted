@@ -1,6 +1,14 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
+import { ThemeProvider } from './components/ThemeContext';
+import withTransition from './components/withTransition';
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }: AppProps) {
+  const WrappedComponent = withTransition(Component);
+  return (
+    <ThemeProvider>
+      <WrappedComponent {...pageProps} />
+    </ThemeProvider>
+  );
 }
+export default MyApp;
