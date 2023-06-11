@@ -49,6 +49,137 @@ li {
   opacity: 1;
 }
 
+/* styles/WelcomeOverlay.css */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: 50;
+  transition: transform 1s;
+}
+
+.overlay-left {
+  left: 0;
+  width: 50%;
+  transform: translateX(0%);
+  z-index: 50;
+}
+
+.overlay-right {
+  right: 0;
+  width: 50%;
+  transform: translateX(0%);
+  z-index: 50;
+}
+
+.overlay-left.open {
+  transform: translateX(-100%);
+  z-index: 50;
+}
+
+.overlay-right.open {
+  transform: translateX(100%);
+  z-index: 50;
+}
+
+.welcome-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0);
+  }
+}
+
+.loader {
+  position: relative;
+  height: 10px;
+  width: 50%;
+  background-color: #ddd;
+  z-index: 60;
+  border-radius: 100px;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+.loader:before {
+  position: absolute;
+  height: 10px;
+  background-color: #ff9137;
+  box-shadow: -5px 0px 10px 2px #ddd;
+  content: "";
+  animation: loading 3s linear;
+  border-radius: 100px;
+}
+
+.loader.hidden {
+  opacity: 0;
+}
+
+@keyframes loadingImageOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.reveal-image-opacity {
+  animation: reveal 3s linear forwards;
+}
+
+.fadeOut {
+  animation: fadeOut 1s;
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 1200px) {
   .bubble1 {
     bottom: 25.5%;
