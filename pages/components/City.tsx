@@ -161,7 +161,7 @@ const City: NextPage = () => {
       <img
         className={`absolute bottom-[24.5%] left-[23.5%] w-72 z-30 bubble1 ${
           isBubbleVisible ? "visible" : ""
-        }max-[400px]:hidden`}
+        } max-[400px]:hidden`}
         src="/images/page2/Website2Bubble.png"
         alt=""
       />
