@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       <WelcomeOverlay />
       <Head1 />
       <img className="h-screen w-screen z-0" src={imageSrc} alt="" />
-      <Link href="components\City">
+      <Link href="components\Choice">
         <img
           className="absolute bottom-[24.3%] left-[26%] h-[70px] w-[15.5%] z-10 arrow"
           src="/images/page1/WebsiteMainArrow.png"

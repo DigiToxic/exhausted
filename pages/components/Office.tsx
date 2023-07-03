@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import type { NextPage } from "next";
 import Head1 from "./Triple Head/Header1";
+import Utility from "./Utility";
 import { useTheme } from "../../contexts/ThemeContext";
 import PopupScreen from "./PopupScreen";
 import PopupPaper from "./PopupPaper";
 import PopupMint from "./PopupMint";
+import Link from "next/link";
 
 const Mint: NextPage = () => {
   const { theme } = useTheme();
@@ -72,12 +74,14 @@ const Mint: NextPage = () => {
       <Head1 />
       <img className="h-screen w-screen z-0" src={imageSrc} alt="" />
 
+      <Link href="Utility">
       <img
         className="absolute bottom-[7.5%] left-[6.5%] w-[20.7%] h-[34.5%] cursor-pointer z-20"
         src={imageLaptop}
         alt=""
-        onClick={() => setIsPopupOpen(true)}
+       // onClick={() => setIsPopupOpen(true)}
       />
+         </Link>
 
       <img
         className="absolute bottom-[3.2%] right-0 z-20 w-[30%] h-[18%] cursor-pointer"
@@ -86,20 +90,20 @@ const Mint: NextPage = () => {
         onClick={() => setIsPopupOpen2(true)}
       />
 
-      <img
+      {/*     <img
         className="absolute bottom-[1%] right-[32.5%] w-[15.8%] max-[790px]:w-[30%] h-[15.8%] cursor-pointer"
         src="/images/page3/Website_3_ButtonNormal.png"
         alt=""
         onClick={() => setIsPopupOpen3(true)}
-      />
+      />*/}
 
-     {/* {isPopupOpen && (
+      {isPopupOpen && (
         <PopupScreen trigger={isPopupOpen} setTrigger={setIsPopupOpen}>
           <p></p>
         </PopupScreen>
       )}
 
-      {isPopupOpen2 && (
+      {/*   {isPopupOpen2 && (
         <PopupPaper trigger={isPopupOpen2} setTrigger={setIsPopupOpen2}>
           <p></p>
         </PopupPaper>

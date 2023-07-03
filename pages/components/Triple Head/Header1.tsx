@@ -18,7 +18,7 @@ const Head1: NextPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="absolute flex justify-between w-full items-center">
+    <div className="absolute flex justify-between w-full items-center pt-2">
       <img
         className="h-20 w-72 ml-4 max-[600px]:w-52 max-[450px]:w-36 max-[450px]:h-16"
         src="/images/logo/Website2LogoCrop2.png"
