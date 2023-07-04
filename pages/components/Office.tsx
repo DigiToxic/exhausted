@@ -74,14 +74,12 @@ const Mint: NextPage = () => {
       <Head1 />
       <img className="h-screen w-screen z-0" src={imageSrc} alt="" />
 
-      <Link href="Utility">
       <img
         className="absolute bottom-[7.5%] left-[6.5%] w-[20.7%] h-[34.5%] cursor-pointer z-20"
         src={imageLaptop}
         alt=""
-       // onClick={() => setIsPopupOpen(true)}
+        // onClick={() => setIsPopupOpen(true)}
       />
-         </Link>
 
       <img
         className="absolute bottom-[3.2%] right-0 z-20 w-[30%] h-[18%] cursor-pointer"
@@ -97,13 +95,13 @@ const Mint: NextPage = () => {
         onClick={() => setIsPopupOpen3(true)}
       />*/}
 
-      {isPopupOpen && (
+      {/*  {isPopupOpen && (
         <PopupScreen trigger={isPopupOpen} setTrigger={setIsPopupOpen}>
           <p></p>
         </PopupScreen>
       )}
 
-      {/*   {isPopupOpen2 && (
+         {isPopupOpen2 && (
         <PopupPaper trigger={isPopupOpen2} setTrigger={setIsPopupOpen2}>
           <p></p>
         </PopupPaper>

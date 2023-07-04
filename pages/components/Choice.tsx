@@ -27,13 +27,13 @@ const Choice: NextPage = () => {
           alt=""
         />
       </Link>
-      <Link href="Utility" className="cursor-pointer">
+      {/* <Link href="Utility" className="cursor-pointer">
         <img
           className="absolute w-[16.1%] h-[20%] left-[2.7%] top-[15.5%]"
           src="/images/page4/Exhausted RoadMap Signs Vault.png"
           alt=""
         />
-      </Link>
+      </Link>*/}
     </div>
   );
 };
