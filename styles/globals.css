@@ -180,6 +180,24 @@ li {
   }
 }
 
+.box-text {
+  padding-top: 380px;
+}
+
+@media (max-height: 740px) {
+  .box-text {
+    padding-top: 340px;
+  }
+}
+
+@media (max-height: 700px) {
+  .box-text {
+    padding-top: 320px;
+  }
+}
+
+/* Team media */
+
 @media (max-width: 1200px) {
   .bubble1 {
     bottom: 25.5%;
