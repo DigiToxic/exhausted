@@ -1,5 +1,6 @@
 import React from "react";
 import Head1 from "./Triple Head/Header1";
+import { motion } from "framer-motion";
 
 function Roadmap() {
   return (
@@ -12,15 +13,28 @@ function Roadmap() {
       />
 
       <div className="flex flex-col justify-center items-center mt-32">
-        <p className="text-white text-2xl font-bold mb-10 text-center">
-          Watch this first before scrolling any further!
-        </p>
+        <motion.div
+          initial={{ opacity: 0, y: "-40%" }}
+          whileInView={{ opacity: 1, y: "0%" }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 1 }}
+        >
+          <p className="text-white text-2xl font-bold mb-10 text-center">
+            Watch this first before scrolling any further!
+          </p>
+        </motion.div>
 
-        <div className="bg-gray-500 w-[590px] h-[315px] rounded-3xl border-2 flex justify-center items-center max-[700px]:w-[540px] max-[600px]:w-[490px] max-[540px]:w-[430px] max-[485px]:w-[380px] max-[450px]:w-[330px]">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.8, duration: 1 }}
+          className="bg-gray-500 w-[590px] h-[315px] rounded-3xl border-2 flex justify-center items-center max-[700px]:w-[540px] max-[600px]:w-[490px] max-[540px]:w-[430px] max-[485px]:w-[380px] max-[450px]:w-[330px]"
+        >
           <p className="underline text-white text-2xl rotate-[24deg]">
             Video coming soon!
           </p>
-        </div>
+        </motion.div>
         {/* <iframe
           className="rounded-3xl border-2 border-white max-[700px]:w-[540px] max-[600px]:w-[490px] max-[540px]:w-[430px] max-[485px]:w-[380px] max-[450px]:w-[330px]"
           width="590"
@@ -30,7 +44,13 @@ function Roadmap() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe> */}
-        <div className="w-1/2 mt-12 max-[1250px]:w-3/4">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 1, duration: 0.5 }}
+          className="w-1/2 mt-12 max-[1250px]:w-3/4"
+        >
           <p className="text-white text-center">
             Huff... <br />
             <br />
@@ -72,14 +92,20 @@ function Roadmap() {
             literal facility and unfair edges to each of your own wealth
             creation.
           </p>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="flex justify-center items-center text-center mt-32">
+      <motion.div
+        initial={{ opacity: 0, y: "-40%" }}
+        whileInView={{ opacity: 1, y: "0%" }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.3, duration: 1 }}
+        className="flex justify-center items-center text-center mt-32"
+      >
         <p className="text-white font-bold text-3xl underline">
           Exhausted Roadmap
         </p>
-      </div>
+      </motion.div>
 
       <div className="absolute overflow-hidden h-[1040px] -z-10 max-[830px]:hidden">
         <img
@@ -90,7 +116,13 @@ function Roadmap() {
       </div>
 
       <div className="flex justify-center items-center mt-16 mb-32">
-        <div className="h-[650px] border-l-2 border-[#183C7A] -ml-16 mr-10 max-[830px]:hidden">
+        <motion.div
+          initial={{ opacity: 0, y: "-50%" }}
+          whileInView={{ opacity: 1, y: "0%" }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3, duration: 1 }}
+          className="h-[650px] border-l-2 border-[#183C7A] -ml-16 mr-10 max-[830px]:hidden"
+        >
           <div className="flex flex-col justify-between h-[650px] -ml-[15px]">
             <div className="flex items-center">
               <div className="border-[15px] border-[#183C7A] rounded-full mt-10"></div>
@@ -111,10 +143,16 @@ function Roadmap() {
               </span>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         <div className="flex flex-col justify-between items-center text-center w-[600px]">
-          <div className="flex flex-col items-center mb-24 w-5/6">
+          <motion.div
+            initial={{ opacity: 0, x: "10%" }}
+            whileInView={{ opacity: 1, x: "0%" }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3, duration: 1 }}
+            className="flex flex-col items-center mb-24 w-5/6"
+          >
             <p className="text-white font-bold text-2xl mb-4">Phase 1 :</p>
             <li className="text-white text-lg">Pre mint utilities</li>
             <li className="text-white text-lg">Community building</li>
@@ -122,8 +160,14 @@ function Roadmap() {
               Collaboration & exhausted assets launch
             </li>
             <li className="text-white text-lg">Begin the mint</li>
-          </div>
-          <div className="flex flex-col items-center mb-24 w-5/6">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "10%" }}
+            whileInView={{ opacity: 1, x: "0%" }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 1 }}
+            className="flex flex-col items-center mb-24 w-5/6"
+          >
             <p className="text-white font-bold text-2xl mb-3">Phase 2 :</p>
             <li className="text-white text-lg">
               Launch all of the utilities after day 1 of mint
@@ -133,8 +177,14 @@ function Roadmap() {
             <li className="text-white text-lg">
               In real life events twice a year in Greece and Spain
             </li>
-          </div>
-          <div className="flex flex-col items-center w-5/6">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "10%" }}
+            whileInView={{ opacity: 1, x: "0%" }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.7, duration: 1 }}
+            className="flex flex-col items-center w-5/6"
+          >
             <p className="text-white font-bold text-2xl mb-4">Phase 3 :</p>
             <li className="text-white text-lg">
               Launch the most powerful SaaS tool in web3 accessible to our
@@ -143,11 +193,17 @@ function Roadmap() {
             <li className="text-white text-lg">
               Continue growing community and proper branding (IP)
             </li>
-          </div>
+          </motion.div>
         </div>
       </div>
 
-      <div className="flex justify-center items-center max-[830px]:mb-14">
+      <motion.div
+        initial={{ opacity: 0, y: "40%" }}
+        whileInView={{ opacity: 1, y: "0%" }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.3, duration: 0.5 }}
+        className="flex justify-center items-center max-[830px]:mb-14"
+      >
         <div className="w-3/4">
           <p className="text-white text-center text-lg">
             While we are condifent to guaranteed at least a 10x return of
@@ -156,7 +212,7 @@ function Roadmap() {
             massive changed to the industry, setting new standards.
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
