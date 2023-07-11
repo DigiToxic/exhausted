@@ -23,7 +23,7 @@ const Choice: NextPage = () => {
       <img className="h-screen w-screen z-0" src={imageSrc} alt="" />
       <Link href="Roadmap">
         <img
-          className="absolute w-[472px] h-[300px] top-[180px] left-[530px]"
+          className="absolute w-[30.7%] h-[39.5%] top-[24%] left-[34.6%]"
           src={roadmap}
           alt=""
         />
