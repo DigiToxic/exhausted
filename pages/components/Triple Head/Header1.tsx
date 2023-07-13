@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { NextPage } from "next";
 import { useTheme } from "../../../contexts/ThemeContext";
+import Link from "next/link";
 
 const backdrop = {
   visible: { opacity: 1 },
@@ -19,11 +20,13 @@ const Head1: NextPage = () => {
 
   return (
     <div className="absolute flex justify-between w-full items-center pt-2">
-      <img
-        className="h-20 w-72 ml-4 max-[600px]:w-52 max-[450px]:w-36 max-[450px]:h-16"
-        src="/images/logo/Website2LogoCrop2.png"
-        alt=""
-      />
+      <Link href="/">
+        <img
+          className="h-20 w-72 ml-4 max-[600px]:w-52 max-[450px]:w-36 max-[450px]:h-16"
+          src="/images/logo/Website2LogoCrop2.png"
+          alt=""
+        />
+      </Link>
 
       <div className="flex justify-between max-[800px]:hidden">
         <button
