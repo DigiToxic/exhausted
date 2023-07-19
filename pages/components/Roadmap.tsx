@@ -175,7 +175,7 @@ function Roadmap() {
             <li className="text-white text-lg">Art reveal</li>
             <li className="text-white text-lg">Partnerships & merger talks</li>
             <li className="text-white text-lg">
-              In real life events twice a year in Greece and Spain
+              In real life events twice a year around the world
             </li>
           </motion.div>
           <motion.div
