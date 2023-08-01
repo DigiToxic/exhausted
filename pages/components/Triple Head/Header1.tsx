@@ -30,7 +30,7 @@ const Head1: NextPage = () => {
 
       <div className="flex justify-between max-[800px]:hidden">
         <button
-          className=" p-2 mr-4 rounded-2xl bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 active:bg-slate-200"
+          className="p-2 mr-4 rounded-2xl bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 active:bg-slate-200"
           onClick={toggleTheme}
         >
           Toggle

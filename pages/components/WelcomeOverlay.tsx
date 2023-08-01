@@ -82,6 +82,7 @@ const WelcomeOverlay: React.FC = () => {
           />
 
           <div className={`loader ${fadeOut ? "fadeOut" : ""}`}></div>
+          <p className="text-xl mt-2">The irresistible future of modern education</p>
         </div>
       ) : (
         !isOpen && (
